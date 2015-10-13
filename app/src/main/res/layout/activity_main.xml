@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente"
+        android:textSize="15dp"/>
+
+    <EditText android:id="@+id/txtCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_margin="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor da Nota fiscal (R$)"
+        android:textSize="15dp"/>
+
+    <EditText android:id="@+id/txtValordaNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:inputType="numberDecimal"
+        android:layout_margin="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carga (Kg)"
+        android:textSize="15dp"/>
+
+    <EditText android:id="@+id/txtCarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:inputType="numberDecimal"
+        android:layout_margin="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado de Destino"
+        android:textSize="15dp"/>
+
+    <Spinner android:id="@+id/spnEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione o código da carga"
+        android:textSize="15dp"/>
+
+    <Spinner android:id="@+id/spnCodigoCarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Incluir Seguro?"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+        <RadioGroup android:id="@+id/rgIncluirSeguro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sim"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Total do Frete"
+        android:textSize="15dp"/>
+    <TextView android:id="@+id/txtValorTotaldoFrete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 0.00"
+        android:textSize="15dp"
+        android:layout_margin="3dp"
+        android:background="#fcff8a" />
+
+    <Button android:id="@+id/btnCalcularFrete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Frete"
+        android:textSize="15dp"/>
+
+</LinearLayout>

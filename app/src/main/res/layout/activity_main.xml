@@ -80,11 +80,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <RadioButton
+                android:id="@+id/rbSim"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sim"/>
+
             <RadioButton
+                android:id="@+id/rbNao"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Não"/>
@@ -96,7 +100,9 @@
         android:layout_height="wrap_content"
         android:text="Valor Total do Frete"
         android:textSize="15dp"/>
-    <TextView android:id="@+id/txtValorTotaldoFrete"
+
+    <TextView
+        android:id="@+id/lblValorTotaldoFrete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="R$ 0.00"
